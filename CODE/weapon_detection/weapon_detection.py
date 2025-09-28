@@ -3,7 +3,7 @@ import numpy as np
 
 # Load Yolo
 # Load Yolo
-# Download weight file(yolov3_training_2000.weights) from this link :- https://drive.google.com/file/d/10uJEsUpQI3EmD98iwrwzbD4e19Ps-LHZ/view?usp=sharing
+# Download weight file(yolov3_training_2000.weights) from this link :- https://drive.google.com/file/d/10uJEsUpQI3EmD98iwrwzbD4e19Ps-LHZ/view?usp=sharing and place in weapo_detection file
 net = cv2.dnn.readNet("yolov3_training_2000.weights", "yolov3_testing.cfg")
 classes = ["Weapon"]
 output_layer_names = net.getUnconnectedOutLayersNames()
@@ -90,3 +90,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
